@@ -8,7 +8,8 @@ const mongoose = require('mongoose');
  * @param {string} hostBD - Pasamos host de la conexion
  * @param {string} nameDB - Pasamos nombre de la DB
  */
-const mongoDB = `mongodb://${process.env.hostDB}/${process.env.nameDB}`;
+// const mongoDB = `mongodb://${process.env.hostDB}/${process.env.nameDB}`;
+const mongoDB = process.env.mongoDB;
 
 /**
  * @param {string} mongoDB - Pasamos la cadena de conexion de la DB
